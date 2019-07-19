@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	var tableau =[];
+	tableau.push(1);
+	tableau.push(2);
+	tableau.push(3);
+
+	
+	for(i=0;i<=tableau.length-1;i++){
+		alert(tableau[i]);
+	}
+</script>
+
+<div id="div_principal">
+
+	<button id="btn">ajouter un div</button>
+	
+</div>
+
+<script type="text/javascript">
+
+
+			var divPrincipal = document.querySelector('#div_principal');
+			var btnAdd = document.querySelector('#btn');
+	
+			btnAdd.addEventListener("click", function()
+				
+				{var divEnfant = document.createElement("div");
+			
+
+			divPrincipal.appendChild(divEnfant)});
+		
+</script>
+</body>
+</html>
